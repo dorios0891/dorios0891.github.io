@@ -9,72 +9,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <style>
     :root, [data-theme="light"] {
-      --color-bg: #f4f6f8;
-      --color-surface: #ffffff;
-      --color-surface-2: #f0f4f7;
-      --color-surface-offset: #e4eaef;
-      --color-surface-dynamic: #d6dfe8;
-      --color-divider: #cdd6de;
-      --color-border: #b8c5cf;
-      --color-text: #18232c;
-      --color-text-muted: #5a6e7c;
-      --color-text-faint: #98aab7;
-      --color-text-inverse: #f0f4f7;
-      --color-primary: #0077b6;
-      --color-primary-hover: #005f91;
-      --color-primary-active: #004770;
-      --color-primary-highlight: #c8e0f0;
-      --color-success: #1d7a3a;
-      --color-success-highlight: #c9ecd4;
-      --color-warning: #b45309;
-      --color-warning-highlight: #fde8c8;
-      --color-error: #b91c1c;
-      --color-error-highlight: #fde8e8;
-      --color-accent: #0096c7;
-      --font-display: 'Instrument Serif', Georgia, serif;
-      --font-body: 'Inter', 'Helvetica Neue', sans-serif;
-      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
-      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
-      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
-      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
-      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
-      --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
-      --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
-      --space-16: 4rem;
-      --radius-sm: 0.375rem; --radius-md: 0.5rem;
-      --radius-lg: 0.75rem; --radius-xl: 1rem; --radius-full: 9999px;
-      --shadow-sm: 0 1px 2px oklch(0.2 0.02 220 / 0.08);
-      --shadow-md: 0 4px 12px oklch(0.2 0.02 220 / 0.10);
+      --color-bg: #f4f6f8; --color-surface: #ffffff; --color-surface-2: #f0f4f7;
+      --color-surface-offset: #e4eaef; --color-surface-dynamic: #d6dfe8;
+      --color-divider: #cdd6de; --color-border: #b8c5cf; --color-text: #18232c;
+      --color-text-muted: #5a6e7c; --color-text-faint: #98aab7; --color-text-inverse: #f0f4f7;
+      --color-primary: #0077b6; --color-primary-hover: #005f91; --color-primary-active: #004770;
+      --color-primary-highlight: #c8e0f0; --color-success: #1d7a3a; --color-success-highlight: #c9ecd4;
+      --color-warning: #b45309; --color-warning-highlight: #fde8c8;
+      --color-error: #b91c1c; --color-error-highlight: #fde8e8; --color-accent: #0096c7;
+      --font-display: 'Instrument Serif', Georgia, serif; --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem); --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem); --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem); --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem;
+      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem; --radius-xl: 1rem; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px oklch(0.2 0.02 220 / 0.08); --shadow-md: 0 4px 12px oklch(0.2 0.02 220 / 0.10);
       --shadow-lg: 0 12px 32px oklch(0.2 0.02 220 / 0.14);
       --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
     }
     [data-theme="dark"] {
-      --color-bg: #0d1117;
-      --color-surface: #161b22;
-      --color-surface-2: #1c2330;
-      --color-surface-offset: #212839;
-      --color-surface-dynamic: #2a3445;
-      --color-divider: #232c3b;
-      --color-border: #2e3a4e;
-      --color-text: #c9d1d9;
-      --color-text-muted: #7a8899;
-      --color-text-faint: #485666;
-      --color-text-inverse: #0d1117;
-      --color-primary: #58a6ff;
-      --color-primary-hover: #79b8ff;
-      --color-primary-active: #a0cbff;
-      --color-primary-highlight: #1a2c40;
-      --color-success: #3fb950;
-      --color-success-highlight: #122a1a;
-      --color-warning: #d29922;
-      --color-warning-highlight: #2a1f0a;
-      --color-error: #f85149;
-      --color-error-highlight: #2a1010;
-      --color-accent: #39c5e0;
-      --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.3);
-      --shadow-md: 0 4px 12px oklch(0 0 0 / 0.4);
+      --color-bg: #0d1117; --color-surface: #161b22; --color-surface-2: #1c2330;
+      --color-surface-offset: #212839; --color-surface-dynamic: #2a3445;
+      --color-divider: #232c3b; --color-border: #2e3a4e; --color-text: #c9d1d9;
+      --color-text-muted: #7a8899; --color-text-faint: #485666; --color-text-inverse: #0d1117;
+      --color-primary: #58a6ff; --color-primary-hover: #79b8ff; --color-primary-active: #a0cbff;
+      --color-primary-highlight: #1a2c40; --color-success: #3fb950; --color-success-highlight: #122a1a;
+      --color-warning: #d29922; --color-warning-highlight: #2a1f0a;
+      --color-error: #f85149; --color-error-highlight: #2a1010; --color-accent: #39c5e0;
+      --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.3); --shadow-md: 0 4px 12px oklch(0 0 0 / 0.4);
       --shadow-lg: 0 12px 32px oklch(0 0 0 / 0.5);
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -129,7 +93,7 @@
     .risk-mid { background: var(--color-warning-highlight); color: var(--color-warning); }
     .risk-high { background: var(--color-error-highlight); color: var(--color-error); }
     .progress { height: 10px; border-radius: var(--radius-full); background: var(--color-surface-offset); overflow:hidden; }
-    .progress > span { display:block; height:100%; width:0; background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); border-radius: inherit; }
+    .progress > span { display:block; height:100%; width:0; background: linear-gradient(90deg, var(--color-primary), var(--color-accent)); border-radius: inherit; transition: width 0.3s ease; }
     .mini-table th, .mini-table td { text-align:left; padding: .85rem .9rem; border-bottom:1px solid var(--color-divider); vertical-align: top; }
     .mini-table th { color: var(--color-text-muted); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .08em; }
     .range-wrap { display:grid; gap: var(--space-4); }
@@ -150,8 +114,33 @@
     .maddox-row { display:grid; grid-template-columns: 60px 1fr; gap: var(--space-4); align-items:start; padding: var(--space-4); border:1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface-2); }
     .maddox-num { width:60px; height:60px; border-radius:18px; background: var(--color-primary-highlight); color: var(--color-primary); display:flex; align-items:center; justify-content:center; font-weight:800; font-size: 1.25rem; }
     .note { padding: var(--space-4); border-left: 3px solid var(--color-primary); background: color-mix(in oklab, var(--color-primary-highlight) 50%, var(--color-surface)); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; color: var(--color-text); }
+    .cvr-metrics { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: var(--space-3); margin-bottom: var(--space-6); }
+    .num-input { width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface); font-size:1rem; color:var(--color-text); }
+    .icc-filter-btn { padding:.35rem .75rem; border-radius:var(--radius-full); border:1px solid var(--color-border); background:var(--color-surface-2); color:var(--color-text-muted); font-size:var(--text-xs); font-weight:600; cursor:pointer; transition:background var(--transition-interactive), color var(--transition-interactive); white-space:nowrap; }
+    .icc-filter-btn:hover { background:var(--color-primary-highlight); color:var(--color-primary); border-color:var(--color-primary); }
+    .icc-filter-btn.active { background:var(--color-primary-highlight); color:var(--color-primary); border-color:var(--color-primary); }
+    .icc-dot { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:50%; font-size:.75rem; font-weight:800; }
+    .icc-dot-yes { background:var(--color-error-highlight); color:var(--color-error); }
+    .icc-dot-no { color:var(--color-text-faint); }
+    .icc-central-yes { background:var(--color-primary-highlight); color:var(--color-primary); border-radius:var(--radius-full); padding:.2rem .5rem; font-size:var(--text-xs); font-weight:700; }
+    .icc-family-tag { display:inline-flex; padding:.2rem .5rem; border-radius:var(--radius-full); font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; white-space:nowrap; }
+    .family-antibiotic { background:#fde8c8; color:#b45309; }
+    .family-nutrition { background:#c9ecd4; color:#1d7a3a; }
+    .family-antifungal { background:#e8d5f5; color:#7c3aed; }
+    .family-cardiac { background:#fde8e8; color:#b91c1c; }
+    .family-analgesic { background:#dbeafe; color:#1d4ed8; }
+    .family-antihypertensive { background:#fef3c7; color:#92400e; }
+    .family-anticonvulsant { background:#d1fae5; color:#065f46; }
+    .family-other { background:var(--color-surface-offset); color:var(--color-text-muted); }
+    [data-theme="dark"] .family-antibiotic { background:#2a1f0a; color:#d29922; }
+    [data-theme="dark"] .family-nutrition { background:#122a1a; color:#3fb950; }
+    [data-theme="dark"] .family-antifungal { background:#1e1a2e; color:#a78bfa; }
+    [data-theme="dark"] .family-cardiac { background:#2a1010; color:#f85149; }
+    [data-theme="dark"] .family-analgesic { background:#0d1f3c; color:#58a6ff; }
+    [data-theme="dark"] .family-antihypertensive { background:#271f07; color:#d29922; }
+    [data-theme="dark"] .family-anticonvulsant { background:#0a1f17; color:#3fb950; }
     @media (max-width: 820px) {
-      .hero-grid, .grid-2, .ratio-output, .badge-grid { grid-template-columns: 1fr; }
+      .hero-grid, .grid-2, .ratio-output, .badge-grid, .cvr-metrics { grid-template-columns: 1fr; }
       .tab-nav { top: 69px; }
       .site-header, .hero, .tab-nav, .main { padding-left: var(--space-4); padding-right: var(--space-4); }
       .criterion { grid-template-columns: auto 1fr; }
@@ -161,46 +150,512 @@
 <body>
   <header class="site-header">
     <a href="#" class="logo" aria-label="SIMUVA inicio">
-     <img src="./logo.png" class="logo-mark" viewBox="0 0 64 64" fill="none">
+      <img src="./logo.png" class="logo-mark">
       <span><div class="logo-name">SIMUVA</div><div class="logo-sub">Excelencia en Acceso Vascular</div></span>
     </a>
     <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
   </header>
+
   <nav class="tab-nav" aria-label="Navegación de módulos">
-    <button class="tab-btn active" data-tab="adiva">A-DIVA</button>
-    <button class="tab-btn" data-tab="ratio">Ratio catéter/vena</button>
+    <button class="tab-btn active" data-tab="adiva">EA-DIVA</button>
+    <button class="tab-btn" data-tab="ratio">RATIO CATÉTER/VENA</button>
     <button class="tab-btn" data-tab="magic">MAGIC</button>
     <button class="tab-btn" data-tab="maddox">Escala de Maddox</button>
+    <button class="tab-btn" data-tab="icc">pH / Osmolaridad</button>
   </nav>
+
   <main class="main">
-    <section class="tab-panel active" id="adiva"><div class="section-header"><span class="section-tag">Punción difícil</span><h2 class="section-title">Calculadora A-DIVA</h2><p class="section-desc">Marca cada criterio presente. El score total orienta la estrategia recomendada para lograr un acceso vascular periférico seguro y oportuno.</p></div><div class="grid-2"><div class="card"><div class="card-title">Criterios de puntuación</div><div class="criteria-list"><label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">A</span><span><strong>Apariencia palpable</strong><small>¿Es imposible identificar la vena objetivo mediante palpación en la extremidad superior?</small></span></label><label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">D</span><span><strong>Antecedente de acceso intravenoso difícil</strong><small>¿Fue difícil canalizar un catéter intravenoso periférico en el pasado?</small></span></label><label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">I</span><span><strong>Apariencia visual</strong><small>¿Es imposible identificar la vena objetivo mediante inspección visual en la extremidad superior?</small></span></label><label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">V</span><span><strong>Indicación quirúrgica no planificada</strong><small>¿El paciente requiere cirugía urgente o de emergencia?</small></span></label><label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">A</span><span><strong>Diámetro de la vena ≤ 2 mm</strong><small>¿La vena objetivo tiene un diámetro igual o menor a 2 mm?</small></span></label></div></div><div class="score-box"><div class="score-big card"><div class="card-title">Resultado</div><div class="score-big-number" id="adivaScore">0</div><div class="progress"><span id="adivaProgress"></span></div><div style="margin-top:1rem; display:grid; gap:.75rem;"><span class="risk-pill risk-low" id="adivaRisk">Riesgo bajo</span><p class="muted" id="adivaSuggestion">Punción convencional aceptable.</p></div></div><div class="card"><div class="card-title">Conducta sugerida</div><table class="mini-table"><thead><tr><th>Puntaje</th><th>Riesgo</th><th>Acción</th></tr></thead><tbody><tr><td>0–1</td><td>Bajo</td><td>Punción convencional aceptable.</td></tr><tr><td>2–3</td><td>Moderado</td><td>Considerar ultrasonido temprano, no después del tercer intento.</td></tr><tr><td>≥4</td><td>Alto</td><td>Acceso guiado por US desde el inicio o considerar MIDLINE/PICC según el contexto clínico.</td></tr></tbody></table></div></div></div></section>
-    <section class="tab-panel" id="ratio"><div class="section-header"><span class="section-tag">Selección de calibre</span><h2 class="section-title">Diámetro venoso vs ratio catéter/vena</h2><p class="section-desc">El catéter no debe ocupar más del 30–33% del diámetro interno del vaso. Ajusta el tamaño de la vena y obtén el French máximo sugerido.</p></div><div class="grid-2"><div class="card stack"><div><div class="card-title">Calculadora</div><div class="range-wrap"><label for="veinRange"><strong>Diámetro de la vena</strong> <span class="muted">(<span id="veinMm">4.0</span> mm)</span></label><input id="veinRange" class="range-input" type="range" min="1" max="12" step="0.1" value="4.0"></div></div><div class="ratio-output"><div class="metric"><span class="metric-label">30% permitido</span><span class="metric-value" id="allowedMm">1.2 mm</span></div><div class="metric"><span class="metric-label">French máximo</span><span class="metric-value" id="maxFr">4 Fr</span></div><div class="metric"><span class="metric-label">Recomendación</span><span class="metric-value" id="frAdvice">4 Fr o menor</span></div></div><div><div class="card-title">Visual de ocupación</div><div class="occupancy-bar"><div class="occupancy-fill" id="occupancyFill"></div></div><p class="muted" style="margin-top:.7rem;">Meta docente: idealmente mantener la ocupación del vaso en 30% y evitar sobrepasar 33%.</p></div><div class="note">Ejemplo: 0.44 cm = 4.4 mm → 4.4 × 0.3 = 1.32 mm → 1.32 ÷ 0.33 ≈ 4 Fr.</div></div><div class="card"><div class="card-title">Guía rápida</div><table class="mini-table"><thead><tr><th>Vena</th><th>Catéter</th><th>Sugerencia</th></tr></thead><tbody><tr><td>3 mm</td><td>≤3 Fr</td><td>Ideal para dispositivos pequeños.</td></tr><tr><td>4 mm</td><td>≤4 Fr</td><td>Muy útil para catéter corto o largo pequeño.</td></tr><tr><td>5 mm</td><td>≤5 Fr</td><td>Permite más opciones sin sobreocupar la vena.</td></tr><tr><td>6 mm</td><td>≤6 Fr</td><td>Mayor margen para terapias de más demanda.</td></tr></tbody></table></div></div></section>
-    <section class="tab-panel" id="magic"><div class="section-header"><span class="section-tag">Apropiación del dispositivo</span><h2 class="section-title">MAGIC</h2><p class="section-desc">MAGIC significa <em>Michigan Appropriateness Guide for Intravenous Catheters</em>. Es una guía para elegir el acceso vascular más apropiado según duración, infusado y contexto clínico.</p></div><div class="card" style="margin-bottom:1.5rem;"><div class="card-title">Calculadora de elección del dispositivo</div><div class="badge-grid" style="margin-bottom:1rem;"><div class="badge-card"><label for="magicDuration"><strong>Duración prevista</strong></label><select id="magicDuration" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="short">≤5 días</option><option value="mid">6–14 días</option><option value="long">15–30 días</option><option value="extended">≥31 días</option></select></div><div class="badge-card"><label for="magicInfusate"><strong>Tipo de infusado</strong></label><select id="magicInfusate" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="peripheral">Periféricamente compatible</option><option value="irritant">Irritante / vesicante / necesidad central</option></select></div><div class="badge-card"><label for="magicDiva"><strong>Acceso venoso difícil</strong></label><select id="magicDiva" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="no">No</option><option value="yes">Sí</option></select></div><div class="badge-card"><label for="magicCritical"><strong>Paciente crítico inestable</strong></label><select id="magicCritical" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="no">No</option><option value="yes">Sí</option></select></div><div class="badge-card"><label for="magicRenal"><strong>ERC avanzada / preservar venas</strong></label><select id="magicRenal" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="no">No</option><option value="yes">Sí</option></select></div><div class="badge-card"><label for="magicLumens"><strong>Necesidad de múltiples lúmenes</strong></label><select id="magicLumens" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="single">No / un lumen basta</option><option value="multi">Sí / varios lúmenes</option></select></div></div><div class="score-big card" style="background:linear-gradient(135deg,var(--color-primary-highlight),var(--color-surface));"><div class="card-title">Resultado del algoritmo</div><div id="magicDevice" class="score-big-number" style="font-size:clamp(1.6rem, 3vw, 2.6rem);">Catéter periférico</div><p id="magicReason" class="muted" style="margin-top:.75rem;">Para terapias cortas y periféricamente compatibles, la primera opción suele ser un dispositivo periférico.</p><div style="margin-top:1rem;"><span class="risk-pill risk-low" id="magicTag">Opción preferente</span></div></div></div><div class="grid-2" style="margin-top:1.5rem;"><div class="stack"><div class="card"><div class="card-title">Cómo pensar MAGIC</div><div class="magic-flow"><div class="flow-step"><div class="n">1</div><div><strong>Define la duración prevista.</strong><p class="muted">≤5 días, 6–14 días, 15–30 días o ≥31 días.</p></div></div><div class="flow-step"><div class="n">2</div><div><strong>Define el tipo de terapia.</strong><p class="muted">Si el infusado es periféricamente compatible, evita PICC innecesario; si es irritante o vesicante, piensa en acceso central.</p></div></div><div class="flow-step"><div class="n">3</div><div><strong>Evalúa al paciente.</strong><p class="muted">Paciente crítico, cáncer, enfermedad renal crónica, acceso venoso difícil, necesidad de flebotomía frecuente.</p></div></div><div class="flow-step"><div class="n">4</div><div><strong>Elige la alternativa más segura.</strong><p class="muted">Periférico, periférico guiado por US, midline, CVC no tunelizado, PICC, tunelizado o port.</p></div></div><div class="flow-step"><div class="n">5</div><div><strong>Reevalúa todos los días.</strong><p class="muted">Retira el dispositivo cuando ya no tenga indicación clínica.</p></div></div></div></div><div class="card"><div class="card-title">Reglas clave para la web</div><div class="badge-grid"><div class="badge-card"><strong>≤5 días</strong><span class="muted">Si la infusión es periféricamente compatible, el PICC suele ser inapropiado.</span></div><div class="badge-card"><strong>6–14 días</strong><span class="muted">Preferir midline o periférico guiado por ultrasonido antes que PICC.</span></div><div class="badge-card"><strong>≥15 días</strong><span class="muted">El PICC empieza a ser una opción más razonable si el contexto lo justifica.</span></div><div class="badge-card"><strong>Irritantes / vesicantes</strong><span class="muted">El acceso central puede ser apropiado independientemente de la duración.</span></div><div class="badge-card"><strong>ERC 3b o mayor</strong><span class="muted">Evitar PICC y midline en el brazo para preservar capital venoso.</span></div><div class="badge-card"><strong>Paciente crítico inestable</strong><span class="muted">Si el uso será corto, suele preferirse CVC no tunelizado.</span></div></div></div></div><div class="stack"><div class="card"><div class="card-title">Resumen operativo</div><table class="mini-table"><thead><tr><th>Escenario</th><th>Dispositivo más razonable</th></tr></thead><tbody><tr><td>Infusión periféricamente compatible ≤5 días</td><td>Catéter periférico o periférico guiado por US.</td></tr><tr><td>Infusión periféricamente compatible 6–14 días</td><td>Midline o periférico guiado por US; PICC no es primera opción.</td></tr><tr><td>Infusión periféricamente compatible ≥15 días</td><td>Considerar PICC según contexto clínico.</td></tr><tr><td>Irritantes / vesicantes</td><td>PICC o acceso central según necesidad terapéutica.</td></tr><tr><td>Crítico hemodinámicamente inestable</td><td>CVC no tunelizado si se prevé corta duración.</td></tr><tr><td>ERC avanzada</td><td>Evitar dispositivos en venas del brazo; valorar alternativa central y nefrología.</td></tr></tbody></table></div><div class="card"><div class="card-title">Mensaje docente</div><div class="note">MAGIC no es solo “cuándo poner un PICC”; es una forma de decidir qué dispositivo ofrece el mejor balance entre necesidad clínica, seguridad del paciente y preservación del capital venoso.</div></div></div></div></section>
-    <section class="tab-panel" id="maddox"><div class="section-header"><span class="section-tag">Vigilancia de flebitis</span><h2 class="section-title">Escala de Maddox</h2><p class="section-desc">Herramienta observacional para valorar flebitis asociada a catéter periférico. Úsala como guía docente y de seguimiento clínico del sitio de inserción.</p></div><div class="card" style="margin-bottom:1.5rem;"><div class="card-title">Calculadora de puntaje Maddox</div><div class="badge-grid" style="margin-bottom:1rem;"><div class="badge-card"><label for="maddoxGrade"><strong>Selecciona el grado observado</strong></label><select id="maddoxGrade" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="0">0 — Sin signos de flebitis</option><option value="1">1 — Flebitis leve</option><option value="2">2 — Flebitis temprana establecida</option><option value="3">3 — Flebitis moderada</option><option value="4">4 — Flebitis avanzada / tromboflebitis</option><option value="5">5 — Complicación severa</option></select></div><div class="badge-card"><strong>Puntaje actual</strong><div id="maddoxScore" class="score-big-number" style="font-size:clamp(2rem, 5vw, 3.5rem); margin-top:.6rem;">0</div></div></div><div class="score-big card" style="background:linear-gradient(135deg,var(--color-primary-highlight),var(--color-surface));"><div class="card-title">Recomendación de manejo</div><div id="maddoxStatus" class="risk-pill risk-low">Sin flebitis</div><p id="maddoxAdvice" class="muted" style="margin-top:1rem;">Continuar vigilancia rutinaria del sitio, verificar permeabilidad y mantener la monitorización clínica.</p></div></div><div class="grid-2"><div class="card"><div class="card-title">Grados de la escala</div><div class="maddox-steps"><div class="maddox-row"><div class="maddox-num">0</div><div><strong>Sin signos de flebitis</strong><p class="muted">Sitio sin dolor, sin eritema, sin edema y sin induración.</p></div></div><div class="maddox-row"><div class="maddox-num">1</div><div><strong>Flebitis leve</strong><p class="muted">Dolor o sensibilidad local con eritema leve en el sitio de inserción.</p></div></div><div class="maddox-row"><div class="maddox-num">2</div><div><strong>Flebitis temprana establecida</strong><p class="muted">Dolor con eritema más evidente y/o edema alrededor del trayecto venoso.</p></div></div><div class="maddox-row"><div class="maddox-num">3</div><div><strong>Flebitis moderada</strong><p class="muted">Dolor, eritema, edema e induración palpable del trayecto venoso.</p></div></div><div class="maddox-row"><div class="maddox-num">4</div><div><strong>Flebitis avanzada / tromboflebitis</strong><p class="muted">Cordón venoso palpable, induración marcada, dolor importante o signos inflamatorios intensos.</p></div></div><div class="maddox-row"><div class="maddox-num">5</div><div><strong>Complicación severa</strong><p class="muted">Tromboflebitis extensa o sospecha de infección local o sistémica asociada.</p></div></div></div></div><div class="stack"><div class="card"><div class="card-title">Interpretación rápida</div><table class="mini-table"><thead><tr><th>Grado</th><th>Lectura clínica</th><th>Conducta sugerida</th></tr></thead><tbody><tr><td>0</td><td>Sitio normal</td><td>Continuar vigilancia rutinaria.</td></tr><tr><td>1</td><td>Irritación inicial</td><td>Revalorar fijación, permeabilidad, infusado y síntomas.</td></tr><tr><td>2</td><td>Flebitis temprana</td><td>Considerar retiro y rotación del sitio según evolución.</td></tr><tr><td>3</td><td>Flebitis moderada</td><td>Retirar el catéter y documentar hallazgos.</td></tr><tr><td>4–5</td><td>Complicación significativa</td><td>Retirar, valorar tromboflebitis/infección y escalar manejo.</td></tr></tbody></table></div><div class="card"><div class="card-title">Qué observar en la práctica</div><ul class="muted" style="padding-left:1rem; display:grid; gap:.5rem;"><li>Dolor espontáneo o a la palpación.</li><li>Eritema alrededor del punto de inserción.</li><li>Edema local o del trayecto venoso.</li><li>Induración o cordón palpable.</li><li>Calor local, secreción o signos de infección.</li></ul></div><div class="note">Úsala como pestaña docente para el taller: ideal para simulación, auditoría de PIV y entrenamiento en detección temprana de flebitis.</div></div></div></section>
-  </main><footer style="border-top:1px solid var(--color-border); margin-top:3rem; padding:2rem 1.5rem; background:var(--color-surface); color:var(--color-text-muted); font-size:0.92rem; line-height:1.65;"><div style="max-width:1000px; margin:0 auto; white-space:pre-wrap;">© 2026 – Diego Ríos | SIMUVA
+
+    <!-- ===== EA-DIVA ===== -->
+    <section class="tab-panel active" id="adiva">
+      <div class="section-header">
+        <span class="section-tag">Punción difícil</span>
+        <h2 class="section-title">Calculadora EA-DIVA</h2>
+        <p class="section-desc">Puntaje de 0 a 12 puntos. Marca cada criterio presente para identificar pacientes con riesgo de acceso venoso periférico difícil antes de cualquier intento de punción. Basado en Civetta et al., <em>The Journal of Vascular Access</em>, 2019.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Criterios de puntuación</div>
+          <div class="criteria-list">
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="3"><span class="criterion-letter" style="background:var(--color-error-highlight);color:var(--color-error);">3</span><span><strong>Antecedente de canalización periférica difícil</strong><small>¿Tuvo dificultad documentada para obtener acceso venoso periférico en el pasado?</small></span></label>
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="2"><span class="criterion-letter" style="background:var(--color-warning-highlight);color:var(--color-warning);">2</span><span><strong>Depleción vascular</strong><small>Uso previo de quimioterapia, abuso de drogas IV o venopunciones previas repetidas.</small></span></label>
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">1</span><span><strong>Trastorno coagulativo</strong><small>Coagulopatías o uso de anticoagulantes / antiagregantes plaquetarios.</small></span></label>
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">1</span><span><strong>Enfermedad neurovascular</strong><small>Neuropatía periférica y/o vasculopatía periférica.</small></span></label>
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">1</span><span><strong>Examen clínico de la piel</strong><small>Piel oscura, gruesa o frágil (evaluación clínica del profesional de salud).</small></span></label>
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">1</span><span><strong>Sobrepeso (IMC &gt; 25)</strong><small>¿El paciente tiene índice de masa corporal mayor a 25?</small></span></label>
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="2"><span class="criterion-letter" style="background:var(--color-warning-highlight);color:var(--color-warning);">2</span><span><strong>Evaluación venosa</strong><small>Vena no visible, no palpable, rodante o tortuosa.</small></span></label>
+            <label class="criterion"><input type="checkbox" class="adiva-check" value="1"><span class="criterion-letter">1</span><span><strong>Disponibilidad de un solo lado</strong><small>Acceso limitado a un solo brazo (fístula AV, flebitis, necesidad quirúrgica, amputación).</small></span></label>
+          </div>
+        </div>
+        <div class="score-box">
+          <div class="score-big card">
+            <div class="card-title">Resultado (máx. 12)</div>
+            <div class="score-big-number" id="adivaScore">0</div>
+            <div class="progress"><span id="adivaProgress"></span></div>
+            <div style="margin-top:1rem; display:grid; gap:.75rem;">
+              <span class="risk-pill risk-low" id="adivaRisk">Riesgo bajo</span>
+              <p class="muted" id="adivaSuggestion">Punción convencional aceptable.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Conducta sugerida</div>
+            <table class="mini-table">
+              <thead><tr><th>Puntaje</th><th>Riesgo</th><th>Acción</th></tr></thead>
+              <tbody>
+                <tr><td>0–4</td><td>Bajo</td><td>Punción convencional aceptable.</td></tr>
+                <tr><td>5–8</td><td>Moderado</td><td>Evaluar individualmente; considerar asignar personal experto o ultrasonido.</td></tr>
+                <tr><td>&gt; 8</td><td>Alto</td><td>Técnicas avanzadas (US, midline, PICC) o derivar a evaluación especializada. VPN 97.5%.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <div class="card-title">Referencia del estudio</div>
+            <div class="note">EA-DIVA (Civetta et al., 2019): AUC-ROC 0.94 | Sensibilidad 85.5% | Especificidad 89.2% | VPP 56% | VPN 97.5% — cohorte de validación n=399.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RATIO CATÉTER/VENA ===== -->
+    <section class="tab-panel" id="ratio">
+      <div class="section-header">
+        <span class="section-tag">Selección de calibre</span>
+        <h2 class="section-title">RATIO CATÉTER/VENA</h2>
+        <p class="section-desc">El catéter no debe ocupar más del 30–33% del diámetro interno del vaso. Ajusta el tamaño de la vena y obtén el French máximo sugerido.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card stack">
+          <div>
+            <div class="card-title">Calculadora</div>
+            <div class="range-wrap">
+              <label for="veinRange"><strong>Diámetro de la vena</strong> <span class="muted">(<span id="veinMm">4.0</span> mm)</span></label>
+              <input id="veinRange" class="range-input" type="range" min="1" max="12" step="0.1" value="4.0">
+            </div>
+          </div>
+          <div class="ratio-output">
+            <div class="metric"><span class="metric-label">30% permitido</span><span class="metric-value" id="allowedMm">1.2 mm</span></div>
+            <div class="metric"><span class="metric-label">French máximo</span><span class="metric-value" id="maxFr">4 Fr</span></div>
+            <div class="metric"><span class="metric-label">Recomendación</span><span class="metric-value" id="frAdvice">4 Fr o menor</span></div>
+          </div>
+          <div>
+            <div class="card-title">Visual de ocupación</div>
+            <div class="occupancy-bar"><div class="occupancy-fill" id="occupancyFill"></div></div>
+            <p class="muted" style="margin-top:.7rem;">Meta docente: mantener la ocupación del vaso en 30% y evitar sobrepasar 33%.</p>
+          </div>
+          <div class="note">Ejemplo: 0.44 cm = 4.4 mm → 4.4 × 0.3 = 1.32 mm → 1.32 ÷ 0.33 ≈ 4 Fr.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Guía rápida</div>
+          <table class="mini-table">
+            <thead><tr><th>Vena</th><th>Catéter</th><th>Sugerencia</th></tr></thead>
+            <tbody>
+              <tr><td>3 mm</td><td>≤3 Fr</td><td>Ideal para dispositivos pequeños.</td></tr>
+              <tr><td>4 mm</td><td>≤4 Fr</td><td>Muy útil para catéter corto o largo pequeño.</td></tr>
+              <tr><td>5 mm</td><td>≤5 Fr</td><td>Permite más opciones sin sobreocupar la vena.</td></tr>
+              <tr><td>6 mm</td><td>≤6 Fr</td><td>Mayor margen para terapias de más demanda.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CVR AVANZADO unificado -->
+      <div style="margin-top:2.5rem;">
+        <div class="section-header" style="margin-bottom:1.5rem;">
+          <span class="section-tag">Trombosis por catéter</span>
+          <h3 class="section-title" style="font-size:var(--text-lg);">CVR Avanzado — Cálculo por Área</h3>
+          <p class="section-desc">El ratio catéter/vena (CVR) por área tridimensional (A = πr²) es más preciso que la medición bidimensional. Un CVR ≥ 45% por área multiplica por 13 el riesgo de trombosis asociada al catéter. Basado en Spencer &amp; Mahoney, <em>J Thromb Thrombolysis</em>, 2017.</p>
+        </div>
+
+        <div class="card" style="margin-bottom:1.5rem;">
+          <div class="card-title">Calculadora CVR por área (A = πr²)</div>
+          <div class="badge-grid" style="margin-bottom:1.5rem;">
+            <div class="badge-card">
+              <label for="cvrVessel"><strong>Diámetro del vaso (mm)</strong><br><small class="muted">Medido con US sin torniquete</small></label>
+              <input type="number" id="cvrVessel" class="num-input" min="1" max="15" step="0.1" value="4.2" style="margin-top:.6rem;">
+            </div>
+            <div class="badge-card">
+              <label for="cvrFr"><strong>Tamaño del catéter (French)</strong><br><small class="muted">1 Fr ≈ 0.33 mm de diámetro externo</small></label>
+              <input type="number" id="cvrFr" class="num-input" min="1" max="12" step="0.5" value="5" style="margin-top:.6rem;">
+            </div>
+            <div class="badge-card">
+              <label for="cvrOd"><strong>Diámetro externo real (mm)</strong><br><small class="muted">Verificar en el empaque del fabricante</small></label>
+              <input type="number" id="cvrOd" class="num-input" min="0.3" max="6" step="0.01" value="1.65" style="margin-top:.6rem;">
+            </div>
+          </div>
+          <div class="cvr-metrics">
+            <div class="metric"><span class="metric-label">Área del vaso</span><span class="metric-value" id="cvrAreaVessel">—</span></div>
+            <div class="metric"><span class="metric-label">Área del catéter</span><span class="metric-value" id="cvrAreaCath">—</span></div>
+            <div class="metric"><span class="metric-label">CVR por área</span><span class="metric-value" id="cvrPct" style="font-size:clamp(1.3rem,3vw,2rem);">—</span></div>
+            <div class="metric"><span class="metric-label">Zona de riesgo</span><div style="margin-top:.4rem;"><span id="cvrZone" class="risk-pill risk-low">—</span></div></div>
+          </div>
+          <div class="score-big card" style="background:linear-gradient(135deg,var(--color-primary-highlight),var(--color-surface));">
+            <div class="card-title">Interpretación clínica</div>
+            <p id="cvrAdvice" class="muted" style="margin-top:.4rem;">Ingresa los datos para calcular el CVR.</p>
+            <div style="margin-top:1rem;"><div class="progress"><span id="cvrBar"></span></div></div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="stack">
+            <div class="card">
+              <div class="card-title">Las tres zonas de riesgo (Spencer &amp; Mahoney, 2017)</div>
+              <div class="maddox-steps">
+                <div class="maddox-row" style="border-left:4px solid var(--color-success);">
+                  <div class="maddox-num" style="background:var(--color-success-highlight);color:var(--color-success);font-size:.85rem;">≤33%</div>
+                  <div><strong>Zona verde — Segura</strong><p class="muted">El catéter ocupa ≤33% del área del vaso. Flujo conservado alrededor del dispositivo. Riesgo de trombosis bajo.</p></div>
+                </div>
+                <div class="maddox-row" style="border-left:4px solid var(--color-warning);">
+                  <div class="maddox-num" style="background:var(--color-warning-highlight);color:var(--color-warning);font-size:.8rem;">34–44%</div>
+                  <div><strong>Zona amarilla — Precaución</strong><p class="muted">Zona de transición. Evaluar tipo de infusado, duración y comorbilidades. Considerar vaso mayor o catéter de menor calibre.</p></div>
+                </div>
+                <div class="maddox-row" style="border-left:4px solid var(--color-error);">
+                  <div class="maddox-num" style="background:var(--color-error-highlight);color:var(--color-error);font-size:.85rem;">≥45%</div>
+                  <div><strong>Zona roja — Alto riesgo</strong><p class="muted">CVR ≥ 45%: riesgo de TVP 13× mayor. CVR ≥ 50%: riesgo 8× adicional. Seleccionar vaso mayor o catéter menor antes de insertar.</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">¿Por qué área y no diámetro?</div>
+              <p class="muted">La "regla del 33%" tradicional se basa en medida bidimensional. Al calcular por área (A = πr²), lo que parecía 33% en diámetro equivale a solo ~11% real de área ocupada. El vaso es tridimensional: el cálculo por área refleja mejor el impacto sobre el flujo y la estasis venosa.</p>
+              <div class="note" style="margin-top:1rem;">Ejemplo: vaso 4 mm, catéter 4 Fr (OD 1.32 mm) → Área vaso 12.57 mm² → Área catéter 1.37 mm² → CVR real <strong>10.9%</strong> (no 33%).</div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="card">
+              <div class="card-title">Referencia rápida: OD por French</div>
+              <table class="mini-table">
+                <thead><tr><th>French</th><th>OD est.</th><th>Vena mín. ≤33%</th><th>Vena mín. ≤45%</th></tr></thead>
+                <tbody>
+                  <tr><td>3 Fr</td><td>0.99 mm</td><td>1.72 mm</td><td>1.47 mm</td></tr>
+                  <tr><td>4 Fr</td><td>1.32 mm</td><td>2.30 mm</td><td>1.97 mm</td></tr>
+                  <tr><td>4.5 Fr</td><td>1.49 mm</td><td>2.59 mm</td><td>2.22 mm</td></tr>
+                  <tr><td>5 Fr</td><td>1.65 mm</td><td>2.87 mm</td><td>2.46 mm</td></tr>
+                  <tr><td>5.5 Fr</td><td>1.82 mm</td><td>3.16 mm</td><td>2.71 mm</td></tr>
+                  <tr><td>6 Fr</td><td>1.98 mm</td><td>3.44 mm</td><td>2.95 mm</td></tr>
+                  <tr><td>7 Fr</td><td>2.31 mm</td><td>4.01 mm</td><td>3.44 mm</td></tr>
+                  <tr><td>8 Fr</td><td>2.64 mm</td><td>4.59 mm</td><td>3.94 mm</td></tr>
+                </tbody>
+              </table>
+              <p class="muted" style="margin-top:.75rem;font-size:var(--text-xs);">OD estimado = Fr × 0.33. Verificar siempre el OD real en el empaque del fabricante.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Técnica de medición con US</div>
+              <div class="magic-flow">
+                <div class="flow-step"><div class="n">1</div><div><strong>Sin torniquete</strong><p class="muted">Engrosa artificialmente la vena y subestima el CVR real.</p></div></div>
+                <div class="flow-step"><div class="n">2</div><div><strong>Desplazamiento distal → proximal</strong><p class="muted">Buscar trombosis, estenosis, válvulas venosas o anomalías.</p></div></div>
+                <div class="flow-step"><div class="n">3</div><div><strong>Congelar en máximo diámetro</strong><p class="muted">Medir con calibradores el mayor diámetro externo visible.</p></div></div>
+                <div class="flow-step"><div class="n">4</div><div><strong>Calcular CVR por área</strong><p class="muted">Si CVR ≥ 45%, elegir vaso mayor o catéter de menor calibre.</p></div></div>
+              </div>
+            </div>
+            <div class="note">Spencer TR, Mahoney KJ. <em>Reducing catheter-related thrombosis using a risk reduction tool centered on catheter to vessel ratio.</em> J Thromb Thrombolysis. 2017;44:427–434. DOI: 10.1007/s11239-017-1569-y</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tab-panel" id="magic">
+      <div class="section-header">
+        <span class="section-tag">Apropiación del dispositivo</span>
+        <h2 class="section-title">MAGIC</h2>
+        <p class="section-desc">MAGIC significa <em>Michigan Appropriateness Guide for Intravenous Catheters</em>. Es una guía para elegir el acceso vascular más apropiado según duración, infusado y contexto clínico.</p>
+      </div>
+      <div class="card" style="margin-bottom:1.5rem;">
+        <div class="card-title">Calculadora de elección del dispositivo</div>
+        <div class="badge-grid" style="margin-bottom:1rem;">
+          <div class="badge-card"><label for="magicDuration"><strong>Duración prevista</strong></label><select id="magicDuration" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="short">≤5 días</option><option value="mid">6–14 días</option><option value="long">15–30 días</option><option value="extended">≥31 días</option></select></div>
+          <div class="badge-card"><label for="magicInfusate"><strong>Tipo de infusado</strong></label><select id="magicInfusate" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="peripheral">Periféricamente compatible</option><option value="irritant">Irritante / vesicante / necesidad central</option></select></div>
+          <div class="badge-card"><label for="magicDiva"><strong>Acceso venoso difícil</strong></label><select id="magicDiva" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="no">No</option><option value="yes">Sí</option></select></div>
+          <div class="badge-card"><label for="magicCritical"><strong>Paciente crítico inestable</strong></label><select id="magicCritical" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="no">No</option><option value="yes">Sí</option></select></div>
+          <div class="badge-card"><label for="magicRenal"><strong>ERC avanzada / preservar venas</strong></label><select id="magicRenal" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="no">No</option><option value="yes">Sí</option></select></div>
+          <div class="badge-card"><label for="magicLumens"><strong>Necesidad de múltiples lúmenes</strong></label><select id="magicLumens" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="single">No / un lumen basta</option><option value="multi">Sí / varios lúmenes</option></select></div>
+        </div>
+        <div class="score-big card" style="background:linear-gradient(135deg,var(--color-primary-highlight),var(--color-surface));">
+          <div class="card-title">Resultado del algoritmo</div>
+          <div id="magicDevice" class="score-big-number" style="font-size:clamp(1.6rem, 3vw, 2.6rem);">Catéter periférico</div>
+          <p id="magicReason" class="muted" style="margin-top:.75rem;">Para terapias cortas y periféricamente compatibles, la primera opción suele ser un dispositivo periférico.</p>
+          <div style="margin-top:1rem;"><span class="risk-pill risk-low" id="magicTag">Opción preferente</span></div>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top:1.5rem;">
+        <div class="stack">
+          <div class="card">
+            <div class="card-title">Cómo pensar MAGIC</div>
+            <div class="magic-flow">
+              <div class="flow-step"><div class="n">1</div><div><strong>Define la duración prevista.</strong><p class="muted">≤5 días, 6–14 días, 15–30 días o ≥31 días.</p></div></div>
+              <div class="flow-step"><div class="n">2</div><div><strong>Define el tipo de terapia.</strong><p class="muted">Si el infusado es periféricamente compatible, evita PICC innecesario; si es irritante o vesicante, piensa en acceso central.</p></div></div>
+              <div class="flow-step"><div class="n">3</div><div><strong>Evalúa al paciente.</strong><p class="muted">Paciente crítico, cáncer, ERC, acceso difícil, flebotomía frecuente.</p></div></div>
+              <div class="flow-step"><div class="n">4</div><div><strong>Elige la alternativa más segura.</strong><p class="muted">Periférico, US, midline, CVC no tunelizado, PICC, tunelizado o port.</p></div></div>
+              <div class="flow-step"><div class="n">5</div><div><strong>Reevalúa todos los días.</strong><p class="muted">Retira el dispositivo cuando ya no tenga indicación clínica.</p></div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Reglas clave</div>
+            <div class="badge-grid">
+              <div class="badge-card"><strong>≤5 días</strong><span class="muted">Si periféricamente compatible, el PICC suele ser inapropiado.</span></div>
+              <div class="badge-card"><strong>6–14 días</strong><span class="muted">Preferir midline o periférico guiado por US antes que PICC.</span></div>
+              <div class="badge-card"><strong>≥15 días</strong><span class="muted">El PICC empieza a ser razonable si el contexto lo justifica.</span></div>
+              <div class="badge-card"><strong>Irritantes / vesicantes</strong><span class="muted">Acceso central puede ser apropiado sin importar la duración.</span></div>
+              <div class="badge-card"><strong>ERC 3b o mayor</strong><span class="muted">Evitar PICC y midline en el brazo para preservar capital venoso.</span></div>
+              <div class="badge-card"><strong>Crítico inestable</strong><span class="muted">Si corta duración, suele preferirse CVC no tunelizado.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="stack">
+          <div class="card">
+            <div class="card-title">Resumen operativo</div>
+            <table class="mini-table">
+              <thead><tr><th>Escenario</th><th>Dispositivo más razonable</th></tr></thead>
+              <tbody>
+                <tr><td>Compatible ≤5 días</td><td>Catéter periférico o guiado por US.</td></tr>
+                <tr><td>Compatible 6–14 días</td><td>Midline o periférico guiado por US; no PICC primero.</td></tr>
+                <tr><td>Compatible ≥15 días</td><td>Considerar PICC según contexto.</td></tr>
+                <tr><td>Irritantes / vesicantes</td><td>PICC o acceso central.</td></tr>
+                <tr><td>Crítico inestable</td><td>CVC no tunelizado si corta duración.</td></tr>
+                <tr><td>ERC avanzada</td><td>Evitar dispositivos en brazo; valorar nefrología.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <div class="card-title">Mensaje docente</div>
+            <div class="note">MAGIC no es solo "cuándo poner un PICC"; es una forma de decidir qué dispositivo ofrece el mejor balance entre necesidad clínica, seguridad del paciente y preservación del capital venoso.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MADDOX ===== -->
+    <section class="tab-panel" id="maddox">
+      <div class="section-header">
+        <span class="section-tag">Vigilancia de flebitis</span>
+        <h2 class="section-title">Escala de Maddox</h2>
+        <p class="section-desc">Herramienta observacional para valorar flebitis asociada a catéter periférico. Úsala como guía docente y de seguimiento clínico del sitio de inserción.</p>
+      </div>
+      <div class="card" style="margin-bottom:1.5rem;">
+        <div class="card-title">Calculadora de puntaje Maddox</div>
+        <div class="badge-grid" style="margin-bottom:1rem;">
+          <div class="badge-card"><label for="maddoxGrade"><strong>Selecciona el grado observado</strong></label><select id="maddoxGrade" style="margin-top:.6rem; width:100%; padding:.75rem .9rem; border:1px solid var(--color-border); border-radius:var(--radius-md); background:var(--color-surface);"><option value="0">0 — Sin signos de flebitis</option><option value="1">1 — Flebitis leve</option><option value="2">2 — Flebitis temprana establecida</option><option value="3">3 — Flebitis moderada</option><option value="4">4 — Flebitis avanzada / tromboflebitis</option><option value="5">5 — Complicación severa</option></select></div>
+          <div class="badge-card"><strong>Puntaje actual</strong><div id="maddoxScore" class="score-big-number" style="font-size:clamp(2rem, 5vw, 3.5rem); margin-top:.6rem;">0</div></div>
+        </div>
+        <div class="score-big card" style="background:linear-gradient(135deg,var(--color-primary-highlight),var(--color-surface));">
+          <div class="card-title">Recomendación de manejo</div>
+          <div id="maddoxStatus" class="risk-pill risk-low">Sin flebitis</div>
+          <p id="maddoxAdvice" class="muted" style="margin-top:1rem;">Continuar vigilancia rutinaria del sitio, verificar permeabilidad y mantener la monitorización clínica.</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Grados de la escala</div>
+          <div class="maddox-steps">
+            <div class="maddox-row"><div class="maddox-num">0</div><div><strong>Sin signos de flebitis</strong><p class="muted">Sitio sin dolor, sin eritema, sin edema y sin induración.</p></div></div>
+            <div class="maddox-row"><div class="maddox-num">1</div><div><strong>Flebitis leve</strong><p class="muted">Dolor o sensibilidad local con eritema leve en el sitio de inserción.</p></div></div>
+            <div class="maddox-row"><div class="maddox-num">2</div><div><strong>Flebitis temprana establecida</strong><p class="muted">Dolor con eritema más evidente y/o edema alrededor del trayecto venoso.</p></div></div>
+            <div class="maddox-row"><div class="maddox-num">3</div><div><strong>Flebitis moderada</strong><p class="muted">Dolor, eritema, edema e induración palpable del trayecto venoso.</p></div></div>
+            <div class="maddox-row"><div class="maddox-num">4</div><div><strong>Flebitis avanzada / tromboflebitis</strong><p class="muted">Cordón venoso palpable, induración marcada, dolor importante o signos inflamatorios intensos.</p></div></div>
+            <div class="maddox-row"><div class="maddox-num">5</div><div><strong>Complicación severa</strong><p class="muted">Tromboflebitis extensa o sospecha de infección local o sistémica asociada.</p></div></div>
+          </div>
+        </div>
+        <div class="stack">
+          <div class="card">
+            <div class="card-title">Interpretación rápida</div>
+            <table class="mini-table">
+              <thead><tr><th>Grado</th><th>Lectura clínica</th><th>Conducta sugerida</th></tr></thead>
+              <tbody>
+                <tr><td>0</td><td>Sitio normal</td><td>Continuar vigilancia rutinaria.</td></tr>
+                <tr><td>1</td><td>Irritación inicial</td><td>Revalorar fijación, permeabilidad, infusado y síntomas.</td></tr>
+                <tr><td>2</td><td>Flebitis temprana</td><td>Considerar retiro y rotación del sitio según evolución.</td></tr>
+                <tr><td>3</td><td>Flebitis moderada</td><td>Retirar el catéter y documentar hallazgos.</td></tr>
+                <tr><td>4–5</td><td>Complicación significativa</td><td>Retirar, valorar tromboflebitis/infección y escalar manejo.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <div class="card-title">Qué observar en la práctica</div>
+            <ul class="muted" style="padding-left:1rem; display:grid; gap:.5rem;">
+              <li>Dolor espontáneo o a la palpación.</li>
+              <li>Eritema alrededor del punto de inserción.</li>
+              <li>Edema local o del trayecto venoso.</li>
+              <li>Induración o cordón palpable.</li>
+              <li>Calor local, secreción o signos de infección.</li>
+            </ul>
+          </div>
+          <div class="note">Úsala como pestaña docente para el taller: ideal para simulación, auditoría de PIV y entrenamiento en detección temprana de flebitis.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== pH / OSMOLARIDAD (ICC) ===== -->
+    <section class="tab-panel" id="icc">
+      <div class="section-header">
+        <span class="section-tag">Compatibilidad periférica</span>
+        <h2 class="section-title">pH / Osmolaridad — ICC</h2>
+        <p class="section-desc">Basado en el <em>Infusate Consideration Companion</em> (BD®, 2021). Consulta el pH, riesgo de flebitis, potencial vesicante y recomendación de vía para medicamentos IV de uso frecuente. Filtra por familia o busca por nombre. Solo uso educativo — no sustituye el juicio clínico ni el prospecto del fabricante.</p>
+      </div>
+      <div class="card" style="margin-bottom:1.5rem;">
+        <div class="badge-grid" style="margin-bottom:1rem;">
+          <div class="badge-card" style="grid-column:1/-1;">
+            <label for="iccSearch"><strong>Buscar medicamento</strong></label>
+            <input type="text" id="iccSearch" class="num-input" placeholder="Ej: vancomicina, amiodarona, potasio…" style="margin-top:.6rem;">
+          </div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:.5rem; align-items:center;">
+          <span style="font-size:var(--text-xs); text-transform:uppercase; letter-spacing:.08em; color:var(--color-text-muted); font-weight:700; margin-right:.25rem;">Familia:</span>
+          <button class="icc-filter-btn active" data-family="all">Todos</button>
+          <button class="icc-filter-btn" data-family="antibiotic">Antibiótico</button>
+          <button class="icc-filter-btn" data-family="nutrition">Nutrición/Electrolitos</button>
+          <button class="icc-filter-btn" data-family="antifungal">Antifúngico/Antiviral</button>
+          <button class="icc-filter-btn" data-family="cardiac">Cardíaco/Hemodinámico</button>
+          <button class="icc-filter-btn" data-family="analgesic">Analgésico/Anestésico/SNC</button>
+          <button class="icc-filter-btn" data-family="antihypertensive">Antihipertensivo</button>
+          <button class="icc-filter-btn" data-family="anticonvulsant">Anticonvulsivante</button>
+          <button class="icc-filter-btn" data-family="other">Otro</button>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin-top:.75rem;">
+          <span style="font-size:var(--text-xs); text-transform:uppercase; letter-spacing:.08em; color:var(--color-text-muted); font-weight:700; margin-right:.25rem;">Mostrar solo:</span>
+          <button class="icc-filter-btn" data-flag="central">Prefiere vía central</button>
+          <button class="icc-filter-btn" data-flag="vesicant">Daño por extravasación</button>
+          <button class="icc-filter-btn" data-flag="phlebitis">Flebitis documentada</button>
+          <button class="icc-filter-btn" data-flag="dedicated">Lumen dedicado</button>
+        </div>
+        <p class="muted" style="margin-top:.75rem; font-size:var(--text-xs);" id="iccCount"></p>
+      </div>
+      <div class="grid-2" style="margin-bottom:1.5rem;">
+        <div class="card">
+          <div class="card-title">Límites de compatibilidad periférica</div>
+          <div class="maddox-steps">
+            <div class="maddox-row" style="border-left:4px solid var(--color-success);">
+              <div class="maddox-num" style="background:var(--color-success-highlight);color:var(--color-success);font-size:.8rem;">pH 5–9</div>
+              <div><strong>Compatible periférico</strong><p class="muted">Rango fisiológico aceptable para vías periféricas según ERPIUP 2021 e INS 2021.</p></div>
+            </div>
+            <div class="maddox-row" style="border-left:4px solid var(--color-warning);">
+              <div class="maddox-num" style="background:var(--color-warning-highlight);color:var(--color-warning);font-size:.75rem;">&lt;5 ó &gt;9</div>
+              <div><strong>Riesgo de daño endotelial</strong><p class="muted">pH extremo: evaluar vía central o técnica de minimización (dilución, velocidad lenta, rotación de sitio).</p></div>
+            </div>
+            <div class="maddox-row" style="border-left:4px solid var(--color-error);">
+              <div class="maddox-num" style="background:var(--color-error-highlight);color:var(--color-error);font-size:.75rem;">≥600 mOsm/L</div>
+              <div><strong>Hiperosmolar — central recomendado</strong><p class="muted">Osmolaridad ≥600 mOsm/L: evitar vía periférica. Nutrición parenteral ≥850 mOsm/L requiere acceso central.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Calculadora rápida de riesgo por pH y osmolaridad</div>
+          <div class="range-wrap">
+            <label><strong>pH del infusado</strong> <span class="muted">(<span id="iccPhVal">7.0</span>)</span></label>
+            <input type="range" class="range-input" id="iccPhRange" min="1" max="14" step="0.1" value="7.0">
+          </div>
+          <div class="range-wrap" style="margin-top:1rem;">
+            <label><strong>Osmolaridad estimada</strong> <span class="muted">(<span id="iccOsmVal">300</span> mOsm/L)</span></label>
+            <input type="range" class="range-input" id="iccOsmRange" min="100" max="1500" step="10" value="300">
+          </div>
+          <div style="margin-top:1.25rem; display:grid; gap:.6rem;">
+            <span id="iccPhResult" class="risk-pill risk-low">pH seguro para vía periférica</span>
+            <span id="iccOsmResult" class="risk-pill risk-low">Osmolaridad compatible periférica</span>
+            <p id="iccOverallAdvice" class="muted" style="font-size:var(--text-sm); margin-top:.25rem;"></p>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="overflow-x:auto;">
+        <div class="card-title" style="margin-bottom:1rem;">Tabla de medicamentos IV — Complicaciones vasculares (ICC, BD® 2021)</div>
+        <table class="mini-table" id="iccTable" style="min-width:800px;">
+          <thead>
+            <tr>
+              <th style="min-width:175px;">Medicamento</th>
+              <th>Familia</th>
+              <th>pH</th>
+              <th title="Flebitis documentada">Flebitis</th>
+              <th title="Tromboflebitis">Trombofleb.</th>
+              <th title="Potencial de daño por extravasación / vesicante">Extravas.</th>
+              <th title="Trombosis del vaso">Trombosis</th>
+              <th title="Dolor durante infusión">Dolor</th>
+              <th title="Lumen dedicado / no infusión simultánea">Lumen ded.</th>
+              <th title="Vía central preferida">Central</th>
+            </tr>
+          </thead>
+          <tbody id="iccTbody"></tbody>
+        </table>
+        <p class="muted" style="margin-top:1rem; font-size:var(--text-xs);">● = complicación documentada. Fuente: BD® ICC 2021 — Gahart's Intravenous Medications 37th Ed. Solo uso educativo.</p>
+      </div>
+      <div class="card" style="margin-top:1.5rem;">
+        <div class="card-title">Guías de referencia utilizadas</div>
+        <div class="badge-grid">
+          <div class="badge-card"><strong>ERPIUP 2021</strong><span class="muted">pH 5–9 y &lt;600 mOsm/L para vía periférica.</span></div>
+          <div class="badge-card"><strong>INS 2021</strong><span class="muted">Evitar infusión continua de irritantes/vesicantes en periférica.</span></div>
+          <div class="badge-card"><strong>MAGIC 2015</strong><span class="muted">PIVC/midline no recomendados para infusatos no compatibles.</span></div>
+          <div class="badge-card"><strong>RNAO 2021</strong><span class="muted">No usar catéter periférico para terapia vesicante continua.</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="border-top:1px solid var(--color-border); margin-top:3rem; padding:2rem 1.5rem; background:var(--color-surface); color:var(--color-text-muted); font-size:0.92rem; line-height:1.65;">
+    <div style="max-width:1000px; margin:0 auto; white-space:pre-wrap;">© 2026 – Diego Ríos | SIMUVA
 Todos los derechos reservados.
 El contenido de esta plataforma ha sido desarrollado de manera independiente por Diego Ríos bajo la marca SIMUVA, basado en la integración, análisis crítico y adaptación de guías clínicas, consensos y recomendaciones internacionales vigentes en el ámbito del acceso vascular y la terapia de infusión.
 Se reconoce y atribuye el fundamento conceptual de algunas herramientas clínicas incluidas en esta web a desarrollos internacionales validados, entre ellos:
 Michigan Appropriateness Guide for Intravenous Catheters (MAGIC), desarrollado por el equipo liderado por Sanjay Saint y colaboradores en la University of Michigan.
-A-DIVA Scale (Adult Difficult Intravenous Access), desarrollada por Rik Janssen y colaboradores.
+EA-DIVA Score (Enhanced Adult DIVA), desarrollado y validado por Civetta G, Cortesi S, Mancardi M et al. (Fondazione IRCCS Policlinico San Matteo, Pavia, Italia). J Vasc Access. 2019;20(3):281-289. DOI: 10.1177/1129729818804994.
+Catheter to Vessel Ratio (CVR) Tool, desarrollado por Spencer TR y Mahoney KJ. J Thromb Thrombolysis. 2017;44:427-434. DOI: 10.1007/s11239-017-1569-y.
 Maddox Score / Maddox Scale for IV Access, atribuida a Robert R. Maddox y colaboradores en el contexto de evaluación de acceso intravenoso.
 Esta web constituye una herramienta original de carácter educativo y clínico-operativo. No representa una reproducción literal de ninguna guía específica, sino una interpretación estructurada orientada a optimizar la toma de decisiones clínicas.
 SIMUVA es una propiedad intelectual independiente. Se reserva expresamente el derecho de uso, reproducción, distribución, modificación o explotación total o parcial del contenido sin autorización previa, expresa y por escrito de su autor.
-El uso de la información aquí contenida es responsabilidad exclusiva del usuario y debe ser contextualizado según el entorno clínico, normativo y las condiciones específicas del paciente.</div></footer>
+El uso de la información aquí contenida es responsabilidad exclusiva del usuario y debe ser contextualizado según el entorno clínico, normativo y las condiciones específicas del paciente.</div>
+  </footer>
+
   <script>
+    // ── Tab navigation ──
     const tabs = document.querySelectorAll('.tab-btn');
     const panels = document.querySelectorAll('.tab-panel');
-    tabs.forEach(btn => btn.addEventListener('click', () => { tabs.forEach(b => b.classList.remove('active')); panels.forEach(p => p.classList.remove('active')); btn.classList.add('active'); document.getElementById(btn.dataset.tab).classList.add('active'); window.scrollTo({ top: document.querySelector('.tab-nav').offsetTop - 65, behavior: 'smooth' }); }));
+    tabs.forEach(btn => btn.addEventListener('click', () => {
+      tabs.forEach(b => b.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+      window.scrollTo({ top: document.querySelector('.tab-nav').offsetTop - 65, behavior: 'smooth' });
+    }));
+
+    // ── EA-DIVA ──
     const checks = document.querySelectorAll('.adiva-check');
     const adivaScore = document.getElementById('adivaScore');
     const adivaRisk = document.getElementById('adivaRisk');
     const adivaSuggestion = document.getElementById('adivaSuggestion');
     const adivaProgress = document.getElementById('adivaProgress');
-    function updateAdiva() { const score = [...checks].reduce((sum, el) => sum + (el.checked ? Number(el.value) : 0), 0); adivaScore.textContent = score; adivaProgress.style.width = `${(score / 5) * 100}%`; adivaRisk.className = 'risk-pill'; if (score <= 1) { adivaRisk.classList.add('risk-low'); adivaRisk.textContent = 'Riesgo bajo'; adivaSuggestion.textContent = 'Punción convencional aceptable.'; } else if (score <= 3) { adivaRisk.classList.add('risk-mid'); adivaRisk.textContent = 'Riesgo moderado'; adivaSuggestion.textContent = 'Considerar ultrasonido temprano, no después del tercer intento.'; } else { adivaRisk.classList.add('risk-high'); adivaRisk.textContent = 'Riesgo alto'; adivaSuggestion.textContent = 'Acceso guiado por US desde el inicio o considerar dispositivo alternativo como MIDLINE o PICC según el contexto clínico.'; }}
-    checks.forEach(c => c.addEventListener('change', updateAdiva)); updateAdiva();
-    const veinRange = document.getElementById('veinRange'); const veinMm = document.getElementById('veinMm'); const allowedMm = document.getElementById('allowedMm'); const maxFr = document.getElementById('maxFr'); const frAdvice = document.getElementById('frAdvice');
-    function updateRatio() { const mm = parseFloat(veinRange.value); const allowed = mm * 0.3; const fr = Math.max(1, Math.floor(allowed / 0.33)); veinMm.textContent = mm.toFixed(1); allowedMm.textContent = `${allowed.toFixed(2)} mm`; maxFr.textContent = `${fr} Fr`; frAdvice.textContent = `${fr} Fr o menor`; }
-    veinRange.addEventListener('input', updateRatio); updateRatio();
+    function updateAdiva() {
+      const score = [...checks].reduce((s, el) => s + (el.checked ? Number(el.value) : 0), 0);
+      adivaScore.textContent = score;
+      adivaProgress.style.width = (score / 12 * 100) + '%';
+      adivaRisk.className = 'risk-pill';
+      if (score <= 4) {
+        adivaRisk.classList.add('risk-low'); adivaRisk.textContent = 'Riesgo bajo';
+        adivaSuggestion.textContent = 'Punción convencional aceptable. VPN 97.5% — muy improbable que el acceso sea difícil.';
+      } else if (score <= 8) {
+        adivaRisk.classList.add('risk-mid'); adivaRisk.textContent = 'Riesgo moderado';
+        adivaSuggestion.textContent = 'Evaluar individualmente. Considerar asignar personal experto o valorar ultrasonido según contexto.';
+      } else {
+        adivaRisk.classList.add('risk-high'); adivaRisk.textContent = 'Riesgo alto — usar técnica avanzada';
+        adivaSuggestion.textContent = 'Puntaje > 8: use técnicas avanzadas (US guiado, midline, PICC) o derive a evaluación especializada antes del intento.';
+      }
+    }
+    checks.forEach(c => c.addEventListener('change', updateAdiva));
+    updateAdiva();
+
+    // ── Ratio catéter/vena ──
+    const veinRange = document.getElementById('veinRange');
+    const veinMm = document.getElementById('veinMm');
+    const allowedMm = document.getElementById('allowedMm');
+    const maxFr = document.getElementById('maxFr');
+    const frAdvice = document.getElementById('frAdvice');
+    function updateRatio() {
+      const mm = parseFloat(veinRange.value);
+      const allowed = mm * 0.3;
+      const fr = Math.max(1, Math.floor(allowed / 0.33));
+      veinMm.textContent = mm.toFixed(1);
+      allowedMm.textContent = allowed.toFixed(2) + ' mm';
+      maxFr.textContent = fr + ' Fr';
+      frAdvice.textContent = fr + ' Fr o menor';
+    }
+    veinRange.addEventListener('input', updateRatio);
+    updateRatio();
+
+    // ── MAGIC ──
     const magicDuration = document.getElementById('magicDuration');
     const magicInfusate = document.getElementById('magicInfusate');
     const magicDiva = document.getElementById('magicDiva');
@@ -211,66 +666,25 @@ El uso de la información aquí contenida es responsabilidad exclusiva del usuar
     const magicReason = document.getElementById('magicReason');
     const magicTag = document.getElementById('magicTag');
     function updateMagic() {
-      const duration = magicDuration.value;
-      const infusate = magicInfusate.value;
-      const diva = magicDiva.value;
-      const critical = magicCritical.value;
-      const renal = magicRenal.value;
-      const lumens = magicLumens.value;
-      let device = 'Catéter periférico';
-      let reason = 'Para terapias cortas y periféricamente compatibles, la primera opción suele ser un dispositivo periférico.';
-      let cls = 'risk-pill risk-low';
-      let tag = 'Opción preferente';
-      if (renal === 'yes') {
-        device = 'Evitar PICC / MIDLINE en brazo';
-        reason = 'Si hay ERC avanzada o necesidad de preservar capital venoso, conviene evitar dispositivos del brazo y valorar alternativas centrales con apoyo especializado.';
-        cls = 'risk-pill risk-high';
-        tag = 'Preservar venas';
-      } else if (critical === 'yes' && infusate === 'irritant') {
-        device = 'CVC no tunelizado';
-        reason = 'En paciente crítico inestable con necesidad de terapia central, suele priorizarse un CVC no tunelizado para acceso inmediato y multilusivo.';
-        cls = 'risk-pill risk-high';
-        tag = 'Alta prioridad';
-      } else if (infusate === 'irritant') {
-        if (duration === 'short') {
-          device = lumens === 'multi' ? 'CVC no tunelizado' : 'PICC o CVC según contexto';
-          reason = 'Los infusados irritantes o vesicantes requieren acceso central; si además necesitas varios lúmenes o respuesta inmediata, el CVC gana peso.';
-          cls = 'risk-pill risk-high';
-          tag = 'Acceso central';
-        } else {
-          device = 'PICC';
-          reason = 'Cuando la terapia requiere vía central y la duración supera los pocos días, el PICC suele ser una alternativa razonable si no hay contraindicación.';
-          cls = 'risk-pill risk-mid';
-          tag = 'Central planificado';
-        }
-      } else if (duration === 'short') {
-        device = diva === 'yes' ? 'Periférico guiado por ultrasonido' : 'Catéter periférico';
-        reason = diva === 'yes' ? 'Si hay acceso venoso difícil pero la terapia es corta y periféricamente compatible, conviene intentar periférico guiado por ultrasonido.' : 'Para terapias cortas y compatibles, el acceso periférico convencional sigue siendo apropiado.';
-        cls = 'risk-pill risk-low';
-        tag = 'Primera línea';
-      } else if (duration === 'mid') {
-        device = diva === 'yes' ? 'Midline o periférico guiado por US' : 'Midline';
-        reason = 'En terapias de 6 a 14 días periféricamente compatibles, MAGIC favorece midline o un periférico avanzado antes que PICC.';
-        cls = 'risk-pill risk-mid';
-        tag = 'Evaluar duración';
-      } else if (duration === 'long') {
-        device = diva === 'yes' ? 'PICC o Midline según terapia' : 'PICC';
-        reason = 'Cuando la duración supera dos semanas, el PICC gana pertinencia, aunque en algunos escenarios todavía puede considerarse midline si el infusado lo permite.';
-        cls = 'risk-pill risk-mid';
-        tag = 'Opción razonable';
-      } else if (duration === 'extended') {
-        device = 'PICC o dispositivo de larga permanencia';
-        reason = 'Si la necesidad será prolongada, conviene un dispositivo de larga duración y reevaluación periódica del plan terapéutico.';
-        cls = 'risk-pill risk-mid';
-        tag = 'Mayor permanencia';
-      }
-      magicDevice.textContent = device;
-      magicReason.textContent = reason;
-      magicTag.className = cls;
-      magicTag.textContent = tag;
+      const duration = magicDuration.value, infusate = magicInfusate.value,
+            diva = magicDiva.value, critical = magicCritical.value,
+            renal = magicRenal.value, lumens = magicLumens.value;
+      let device = 'Catéter periférico', reason = 'Para terapias cortas y periféricamente compatibles, la primera opción suele ser un dispositivo periférico.', cls = 'risk-pill risk-low', tag = 'Opción preferente';
+      if (renal === 'yes') { device = 'Evitar PICC / MIDLINE en brazo'; reason = 'Si hay ERC avanzada o necesidad de preservar capital venoso, conviene evitar dispositivos del brazo y valorar alternativas centrales con apoyo especializado.'; cls = 'risk-pill risk-high'; tag = 'Preservar venas'; }
+      else if (critical === 'yes' && infusate === 'irritant') { device = 'CVC no tunelizado'; reason = 'En paciente crítico inestable con necesidad de terapia central, suele priorizarse un CVC no tunelizado para acceso inmediato y multilumen.'; cls = 'risk-pill risk-high'; tag = 'Alta prioridad'; }
+      else if (infusate === 'irritant') {
+        if (duration === 'short') { device = lumens === 'multi' ? 'CVC no tunelizado' : 'PICC o CVC según contexto'; reason = 'Los infusados irritantes o vesicantes requieren acceso central; si además necesitas varios lúmenes o respuesta inmediata, el CVC gana peso.'; cls = 'risk-pill risk-high'; tag = 'Acceso central'; }
+        else { device = 'PICC'; reason = 'Cuando la terapia requiere vía central y la duración supera los pocos días, el PICC suele ser una alternativa razonable si no hay contraindicación.'; cls = 'risk-pill risk-mid'; tag = 'Central planificado'; }
+      } else if (duration === 'short') { device = diva === 'yes' ? 'Periférico guiado por ultrasonido' : 'Catéter periférico'; reason = diva === 'yes' ? 'Si hay acceso venoso difícil pero la terapia es corta y periféricamente compatible, conviene intentar periférico guiado por ultrasonido.' : 'Para terapias cortas y compatibles, el acceso periférico convencional sigue siendo apropiado.'; cls = 'risk-pill risk-low'; tag = 'Primera línea'; }
+      else if (duration === 'mid') { device = diva === 'yes' ? 'Midline o periférico guiado por US' : 'Midline'; reason = 'En terapias de 6 a 14 días periféricamente compatibles, MAGIC favorece midline o un periférico avanzado antes que PICC.'; cls = 'risk-pill risk-mid'; tag = 'Evaluar duración'; }
+      else if (duration === 'long') { device = diva === 'yes' ? 'PICC o Midline según terapia' : 'PICC'; reason = 'Cuando la duración supera dos semanas, el PICC gana pertinencia, aunque en algunos escenarios puede considerarse midline si el infusado lo permite.'; cls = 'risk-pill risk-mid'; tag = 'Opción razonable'; }
+      else if (duration === 'extended') { device = 'PICC o dispositivo de larga permanencia'; reason = 'Si la necesidad será prolongada, conviene un dispositivo de larga duración y reevaluación periódica del plan terapéutico.'; cls = 'risk-pill risk-mid'; tag = 'Mayor permanencia'; }
+      magicDevice.textContent = device; magicReason.textContent = reason; magicTag.className = cls; magicTag.textContent = tag;
     }
     [magicDuration, magicInfusate, magicDiva, magicCritical, magicRenal, magicLumens].forEach(el => el.addEventListener('change', updateMagic));
     updateMagic();
+
+    // ── Maddox ──
     const maddoxGrade = document.getElementById('maddoxGrade');
     const maddoxScore = document.getElementById('maddoxScore');
     const maddoxStatus = document.getElementById('maddoxStatus');
@@ -279,31 +693,304 @@ El uso de la información aquí contenida es responsabilidad exclusiva del usuar
       const grade = Number(maddoxGrade.value);
       maddoxScore.textContent = grade;
       maddoxStatus.className = 'risk-pill';
-      if (grade === 0) {
-        maddoxStatus.classList.add('risk-low');
-        maddoxStatus.textContent = 'Sin flebitis';
-        maddoxAdvice.textContent = 'Continuar vigilancia rutinaria del sitio, verificar permeabilidad y mantener la monitorización clínica.';
-      } else if (grade === 1) {
-        maddoxStatus.classList.add('risk-low');
-        maddoxStatus.textContent = 'Irritación inicial';
-        maddoxAdvice.textContent = 'Revalorar fijación, confort del paciente, permeabilidad del catéter, velocidad de infusión y evolución local.';
-      } else if (grade === 2) {
-        maddoxStatus.classList.add('risk-mid');
-        maddoxStatus.textContent = 'Flebitis temprana';
-        maddoxAdvice.textContent = 'Considerar retiro del catéter, rotación del sitio y documentación de los hallazgos si los signos progresan o persisten.';
-      } else if (grade === 3) {
-        maddoxStatus.classList.add('risk-mid');
-        maddoxStatus.textContent = 'Flebitis moderada';
-        maddoxAdvice.textContent = 'Retirar el catéter, documentar el evento, valorar medidas locales y seleccionar un nuevo sitio de acceso si aún se requiere terapia.';
-      } else {
-        maddoxStatus.classList.add('risk-high');
-        maddoxStatus.textContent = 'Complicación significativa';
-        maddoxAdvice.textContent = 'Retirar el catéter de inmediato, valorar tromboflebitis o infección asociada y escalar la evaluación clínica según el contexto del paciente.';
-      }
+      if (grade === 0) { maddoxStatus.classList.add('risk-low'); maddoxStatus.textContent = 'Sin flebitis'; maddoxAdvice.textContent = 'Continuar vigilancia rutinaria del sitio, verificar permeabilidad y mantener la monitorización clínica.'; }
+      else if (grade === 1) { maddoxStatus.classList.add('risk-low'); maddoxStatus.textContent = 'Irritación inicial'; maddoxAdvice.textContent = 'Revalorar fijación, confort del paciente, permeabilidad del catéter, velocidad de infusión y evolución local.'; }
+      else if (grade === 2) { maddoxStatus.classList.add('risk-mid'); maddoxStatus.textContent = 'Flebitis temprana'; maddoxAdvice.textContent = 'Considerar retiro del catéter, rotación del sitio y documentación de los hallazgos si los signos progresan o persisten.'; }
+      else if (grade === 3) { maddoxStatus.classList.add('risk-mid'); maddoxStatus.textContent = 'Flebitis moderada'; maddoxAdvice.textContent = 'Retirar el catéter, documentar el evento, valorar medidas locales y seleccionar un nuevo sitio de acceso si aún se requiere terapia.'; }
+      else { maddoxStatus.classList.add('risk-high'); maddoxStatus.textContent = 'Complicación significativa'; maddoxAdvice.textContent = 'Retirar el catéter de inmediato, valorar tromboflebitis o infección asociada y escalar la evaluación clínica según el contexto del paciente.'; }
     }
     maddoxGrade.addEventListener('change', updateMaddox);
     updateMaddox();
-    (function(){ const t=document.querySelector('[data-theme-toggle]'); const r=document.documentElement; let d=r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'); r.setAttribute('data-theme', d); function icon(){ t.innerHTML = d==='dark' ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>' : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'; } icon(); t.addEventListener('click', ()=>{ d = d==='dark' ? 'light' : 'dark'; r.setAttribute('data-theme', d); icon(); }); })();
+
+    // ── CVR Avanzado ──
+    const cvrVessel = document.getElementById('cvrVessel');
+    const cvrFr = document.getElementById('cvrFr');
+    const cvrOd = document.getElementById('cvrOd');
+    const cvrAreaVessel = document.getElementById('cvrAreaVessel');
+    const cvrAreaCath = document.getElementById('cvrAreaCath');
+    const cvrPct = document.getElementById('cvrPct');
+    const cvrZone = document.getElementById('cvrZone');
+    const cvrAdvice = document.getElementById('cvrAdvice');
+    const cvrBar = document.getElementById('cvrBar');
+    function updateCVR() {
+      const vd = parseFloat(cvrVessel.value);
+      const od = parseFloat(cvrOd.value);
+      if (!vd || !od || vd <= 0 || od <= 0) return;
+      const va = Math.PI * Math.pow(vd / 2, 2);
+      const ca = Math.PI * Math.pow(od / 2, 2);
+      const cvr = (ca / va) * 100;
+      cvrAreaVessel.textContent = va.toFixed(2) + ' mm²';
+      cvrAreaCath.textContent = ca.toFixed(2) + ' mm²';
+      cvrPct.textContent = cvr.toFixed(1) + '%';
+      cvrBar.style.width = Math.min(cvr, 100) + '%';
+      cvrZone.className = 'risk-pill';
+      if (cvr <= 33) {
+        cvrZone.classList.add('risk-low'); cvrZone.textContent = '🟢 Zona verde';
+        cvrAdvice.textContent = 'CVR ' + cvr.toFixed(1) + '% — Zona segura (≤ 33%). El catéter ocupa una proporción adecuada del área venosa. Riesgo de trombosis bajo según Spencer & Mahoney (2017).';
+      } else if (cvr < 45) {
+        cvrZone.classList.add('risk-mid'); cvrZone.textContent = '🟡 Zona amarilla';
+        cvrAdvice.textContent = 'CVR ' + cvr.toFixed(1) + '% — Precaución (34–44%). Evaluar individualmente el riesgo del paciente, tipo de infusado y duración. Considerar vaso de mayor calibre o catéter menor si es posible.';
+      } else {
+        cvrZone.classList.add('risk-high'); cvrZone.textContent = '🔴 Zona roja';
+        cvrAdvice.textContent = 'CVR ' + cvr.toFixed(1) + '% — Alto riesgo (≥ 45%). Riesgo de TVP 13× mayor. Seleccionar un vaso de mayor diámetro o catéter de menor calibre antes de insertar el dispositivo.';
+      }
+    }
+    cvrFr.addEventListener('input', () => { cvrOd.value = (parseFloat(cvrFr.value) * 0.33).toFixed(2); updateCVR(); });
+    cvrVessel.addEventListener('input', updateCVR);
+    cvrOd.addEventListener('input', updateCVR);
+    updateCVR();
+
+    // ── Theme toggle ──
+    (function() {
+      const t = document.querySelector('[data-theme-toggle]');
+      const r = document.documentElement;
+      let d = r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+      r.setAttribute('data-theme', d);
+      function icon() {
+        t.innerHTML = d === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      }
+      icon();
+      t.addEventListener('click', () => { d = d === 'dark' ? 'light' : 'dark'; r.setAttribute('data-theme', d); icon(); });
+    })();
+
+    // ── ICC — pH / Osmolaridad ──
+    const ICC_DRUGS = [
+      // ANTIBIÓTICOS
+      {name:'ampicilina',ph:'8.0–10.0',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH alcalino; inactivada con aminoglucósidos.'},
+      {name:'ampicilina/sulbactam',ph:'8.0–10.0',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:1,dedicated:1,central:0,notes:'pH alcalino. No mezclar con aminoglucósidos.'},
+      {name:'azitromicina',ph:'NR',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:1,dedicated:1,central:0,notes:'Infundir en ≥1 h. No agregar medicamentos a la misma línea.'},
+      {name:'aztreonam',ph:'4.5–7.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:1,dedicated:0,central:0,notes:''},
+      {name:'cefazolina',ph:'4.5–7.0',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:1,dedicated:0,central:0,notes:''},
+      {name:'cefepime',ph:'4.0–6.0',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'cefotaxima sódica',ph:'5.0–7.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:''},
+      {name:'cefoxitina',ph:'4.2–7.0',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:1,dedicated:0,central:0,notes:''},
+      {name:'ceftriaxona',ph:'6.6–6.7',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:1,dedicated:0,central:0,notes:''},
+      {name:'cefuroxima',ph:'5.0–8.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:1,dedicated:1,central:0,notes:''},
+      {name:'ciprofloxacina',ph:'3.5–4.6',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH ácido; vigilar sitio.'},
+      {name:'clindamicina',ph:'5.5–7.0',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'daptomicina',ph:'6.8',family:'antibiotic',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'delafloxacina',ph:'NR',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:1,dedicated:1,central:0,notes:'No coadministrar con cationes multivalentes (Ca, Mg).'},
+      {name:'doripenem',ph:'4.5–5.5',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:1,pain:1,dedicated:0,central:0,notes:''},
+      {name:'doxiciclina',ph:'1.8–3.3',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH muy ácido; irritante vascular.'},
+      {name:'eravacicline',ph:'5.5–7.0',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'No mezclar con otros medicamentos; lumen dedicado o Y-site.'},
+      {name:'ertapenem',ph:'7.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:1,pain:1,dedicated:1,central:0,notes:'No mezclar ni coinfundir. Reacciones en sitio de infusión.'},
+      {name:'eritromicina',ph:'6.5–7.7',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'Infundir lentamente y diluido.'},
+      {name:'gentamicina',ph:'3.0–5.5',family:'antibiotic',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'No mezclar con beta-lactámicos ni vancomicina.'},
+      {name:'imipenem-cilastatina',ph:'6.5–8.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:1,dedicated:1,central:0,notes:''},
+      {name:'levofloxacina',ph:'3.8–5.8',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH ácido.'},
+      {name:'linezolid',ph:'4.8',family:'antibiotic',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'meropenem',ph:'7.3–8.3',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:0,central:0,notes:''},
+      {name:'metronidazol',ph:'4.5–7.0',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:'Administrar por separado. Tromboflebitis reducida con infusión lenta.'},
+      {name:'minociclina',ph:'4.5–6.0',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:0,central:0,notes:''},
+      {name:'moxifloxacina',ph:'4.1–4.6',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'nafcilina sódica',ph:'6.0–8.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'Limitar periférica a 24–48 h. Tromboflebitis especialmente en ancianos.'},
+      {name:'omadaciclina',ph:'NR',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:0,central:0,notes:'No coinfundir con cationes multivalentes.'},
+      {name:'oritavancina',ph:'3.1–4.3',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH muy ácido.'},
+      {name:'oxacilina',ph:'6.0–8.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Alta incidencia de complicaciones vasculares.'},
+      {name:'penicilina G acuosa',ph:'5.5–8.0',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:1,dedicated:0,central:0,notes:'Puede causar tromboflebitis; rotar sitios.'},
+      {name:'piperacilina-tazobactam',ph:'5.5–6.8',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:1,dedicated:0,central:0,notes:''},
+      {name:'rifampicina',ph:'7.8–8.8',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:''},
+      {name:'sulfametoxazol-trimetoprim',ph:'9.5–10.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'pH muy alcalino. Alto riesgo periférico.'},
+      {name:'telavancina',ph:'4.5–5.0',family:'antibiotic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'tigecicline',ph:'7.8',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:1,dedicated:0,central:0,notes:''},
+      {name:'tobramicina',ph:'3.0–6.5',family:'antibiotic',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:'No mezclar con beta-lactámicos ni vancomicina.'},
+      {name:'vancomicina',ph:'2.5–5.5',family:'antibiotic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Central recomendada a >5 mg/mL. Flebitis frecuente tras 24 h periférica.'},
+      // NUTRICIÓN / ELECTROLITOS
+      {name:'cloruro de calcio 10%',ph:'5.5–7.5',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:'Evitar extravasación perivascular.'},
+      {name:'gluconato de calcio',ph:'6.0–8.2',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'dextrosa <10%',ph:'4.3',family:'nutrition',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH ácido pero compatible periférica.'},
+      {name:'dextrosa ≥10%',ph:'3.2–6.5',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Vesicante si ≥10%. Puede causar lesión tisular severa.'},
+      {name:'dextrosa 50%',ph:'3.2–6.5',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:1,notes:'Extravasación puede causar pérdida de extremidad.'},
+      {name:'emulsión lipídica ≤10%',ph:'6.0–8.9',family:'nutrition',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'Isotónica; puede ser periférica.'},
+      {name:'emulsión lipídica >10%',ph:'6.0–8.9',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:1,notes:'≥900 mOsm/L requiere vía central.'},
+      {name:'sulfato de magnesio',ph:'3.5–7.0',family:'nutrition',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'cloruro de potasio 10 mEq',ph:'4.0–8.0',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'Dolor con infusión periférica.'},
+      {name:'cloruro de potasio 20 mEq',ph:'4.0–8.0',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Central recomendada siempre que sea posible.'},
+      {name:'cloruro de potasio 40 mEq',ph:'4.0–8.0',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Concentraciones altas: exclusivamente central.'},
+      {name:'fosfato de potasio',ph:'2.2–2.4',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'pH muy ácido. Central obligatoria.'},
+      {name:'bicarbonato de sodio >8%',ph:'7.0–8.5',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'cloruro de sodio 3–5%',ph:'4.5–7.0',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'Hiperosmolar. Vigilar sitio estrechamente.'},
+      {name:'trometamina',ph:'NR',family:'nutrition',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:'Evitar extravasación. Flebitis química y venospasmo documentados.'},
+      // ANTIFÚNGICOS / ANTIVIRALES
+      {name:'aciclovir',ph:'11',family:'antifungal',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:'pH muy alcalino (11). Alto riesgo periférico.'},
+      {name:'anfotericina B convencional',ph:'5.0–7.0',family:'antifungal',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:0,central:0,notes:'Muy irritante; frecuente flebitis periférica.'},
+      {name:'caspofungina',ph:'6.6',family:'antifungal',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'pentamidina',ph:'4.1–5.4',family:'antifungal',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'No mezclar con NS ni con otros fármacos.'},
+      {name:'posaconazol',ph:'2.6',family:'antifungal',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:'pH muy ácido.'},
+      {name:'remdesivir',ph:'3.0–4.0',family:'antifungal',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'voriconazol',ph:'NR',family:'antifungal',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      // CARDÍACO / HEMODINÁMICO
+      {name:'amiodarona',ph:'4.08',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Máximo riesgo periférico. Central siempre preferida.'},
+      {name:'conivaptán',ph:'3.4–3.8',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:'pH muy ácido.'},
+      {name:'diltiazem',ph:'3.7–4.1',family:'cardiac',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'dobutamina',ph:'2.5–5.5',family:'cardiac',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'dopamina',ph:'2.5–5.0',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'epinefrina',ph:'2.5–5.0',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'esmolol',ph:'4.5–5.5',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:0,central:0,notes:'Vesicante. Evitar venas pequeñas. Bien tolerado por vía central.'},
+      {name:'lidocaína',ph:'3.0–7.0',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'nitroprusiato',ph:'3.5–6.0',family:'cardiac',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'Verificar permeabilidad; evitar extravasación.'},
+      {name:'norepinefrina',ph:'3.0–4.5',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:1,notes:'Vaso grande preferido. pH ácido; inactivada a pH > 6.'},
+      {name:'fenilefrina',ph:'3.0–6.5',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'vasopresina',ph:'2.5–4.5',family:'cardiac',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:1,notes:'Central recomendada.'},
+      // ANALGÉSICO / ANESTÉSICO / SNC
+      {name:'etomidato',ph:'4.0–7.0',family:'analgesic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:0,central:0,notes:''},
+      {name:'fentanilo',ph:'4.0–7.5',family:'analgesic',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'hidromorfona',ph:'3.5–6.5',family:'analgesic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'ketamina',ph:'3.5–5.5',family:'analgesic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'lorazepam',ph:'6.4',family:'analgesic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:0,central:0,notes:''},
+      {name:'midazolam',ph:'3.0',family:'analgesic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'pH muy ácido; múltiples complicaciones documentadas.'},
+      {name:'morfina',ph:'2.5–6.5',family:'analgesic',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'propofol',ph:'7.0–8.5',family:'analgesic',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'Dolor en sitio hasta 70% periférica. Usar venas antebraquiales.'},
+      {name:'tiopental',ph:'10.0–11.0',family:'analgesic',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH muy alcalino. Considerar vía central.'},
+      // ANTIHIPERTENSIVOS
+      {name:'clevidipina',ph:'6.0–8.0',family:'antihypertensive',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:'No administrar en la misma línea con otros fármacos.'},
+      {name:'hidralazina',ph:'3.4–4.0',family:'antihypertensive',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'labetalol',ph:'3.0–4.5',family:'antihypertensive',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'nicardipina',ph:'3.5–4.7',family:'antihypertensive',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Múltiples complicaciones. Central fuertemente recomendada.'},
+      // ANTICONVULSIVANTES
+      {name:'fenobarbital',ph:'8.5–10.5',family:'anticonvulsant',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'pH alcalino elevado.'},
+      {name:'fenitoína',ph:'12.0',family:'anticonvulsant',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'pH extremo (12). Vesicante conocido. Riesgo alto periférico.'},
+      {name:'valproato',ph:'7.6',family:'anticonvulsant',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'levetiracetam',ph:'5.5',family:'anticonvulsant',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      // OTROS
+      {name:'aminofilina',ph:'8.6–9.0',family:'other',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH límite superior.'},
+      {name:'dantroleno',ph:'9.5–10.3',family:'other',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:'pH alcalino. Vesicante.'},
+      {name:'dexametasona',ph:'7.0–8.5',family:'other',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+      {name:'dexmedetomidina',ph:'4.5–7.0',family:'other',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:'Compatibilidad no establecida; lumen separado necesario.'},
+      {name:'diazepam',ph:'6.2–6.9',family:'other',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'epoprostenol',ph:'10.2–13',family:'other',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:'pH muy alcalino.'},
+      {name:'furosemida',ph:'8.0–9.3',family:'other',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'pH alcalino límite.'},
+      {name:'manitol ≥10%',ph:'4.5–7.0',family:'other',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:0,notes:'Hiperosmolar; múltiples complicaciones.'},
+      {name:'micofenolato mofetilo',ph:'2.4–4.1',family:'other',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:'Infundir en ≥2 h; infusión rápida aumenta flebitis.'},
+      {name:'ondansetrón',ph:'3.0–4.0',family:'other',phlebitis:1,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:''},
+      {name:'pantoprazol',ph:'9.0–10.5',family:'other',phlebitis:1,thrombophlebitis:1,vesicant:0,thrombosis:0,pain:0,dedicated:1,central:0,notes:'pH alcalino.'},
+      {name:'prometazina',ph:'4.0–5.5',family:'other',phlebitis:1,thrombophlebitis:1,vesicant:1,thrombosis:1,pain:1,dedicated:1,central:1,notes:'Alto riesgo de necrosis tisular. Central siempre que sea posible.'},
+      {name:'tacrolimus',ph:'NR',family:'other',phlebitis:0,thrombophlebitis:0,vesicant:0,thrombosis:0,pain:0,dedicated:0,central:0,notes:''},
+    ];
+
+    const familyLabels = {
+      antibiotic:'Antibiótico', nutrition:'Nutrición/Electrolitos',
+      antifungal:'Antifúngico/Antiviral', cardiac:'Cardíaco/Hemodinámico',
+      analgesic:'Analgésico/Anestésico/SNC', antihypertensive:'Antihipertensivo',
+      anticonvulsant:'Anticonvulsivante', other:'Otro'
+    };
+
+    let iccActiveFamily = 'all', iccActiveFlag = null, iccSearchTerm = '';
+
+    function renderICC() {
+      const tbody = document.getElementById('iccTbody');
+      const countEl = document.getElementById('iccCount');
+      let data = ICC_DRUGS.filter(d => {
+        if (iccActiveFamily !== 'all' && d.family !== iccActiveFamily) return false;
+        if (iccActiveFlag === 'central' && !d.central) return false;
+        if (iccActiveFlag === 'vesicant' && !d.vesicant) return false;
+        if (iccActiveFlag === 'phlebitis' && !d.phlebitis) return false;
+        if (iccActiveFlag === 'dedicated' && !d.dedicated) return false;
+        if (iccSearchTerm) {
+          const s = iccSearchTerm.toLowerCase();
+          if (!d.name.toLowerCase().includes(s)) return false;
+        }
+        return true;
+      });
+      countEl.textContent = data.length + ' medicamento' + (data.length !== 1 ? 's' : '') + ' mostrado' + (data.length !== 1 ? 's' : '');
+      const dot = (val) => val
+        ? '<span class="icc-dot icc-dot-yes">●</span>'
+        : '<span class="icc-dot icc-dot-no">–</span>';
+      const phClass = (ph) => {
+        if (ph === 'NR') return '';
+        const nums = ph.replace(/[^0-9.\-–]/g,'').split(/[-–]/).map(Number).filter(n=>!isNaN(n));
+        if (!nums.length) return '';
+        const lo = Math.min(...nums), hi = Math.max(...nums);
+        if (lo < 5 || hi > 9) return 'style="color:var(--color-error);font-weight:700;"';
+        return 'style="color:var(--color-success);font-weight:700;"';
+      };
+      tbody.innerHTML = data.map(d => `
+        <tr title="${d.notes || ''}">
+          <td><strong>${d.name}</strong>${d.notes ? '<br><small style="color:var(--color-text-muted);font-size:.7rem;">' + d.notes + '</small>' : ''}</td>
+          <td><span class="icc-family-tag family-${d.family}">${familyLabels[d.family]}</span></td>
+          <td ${phClass(d.ph)}>${d.ph}</td>
+          <td style="text-align:center;">${dot(d.phlebitis)}</td>
+          <td style="text-align:center;">${dot(d.thrombophlebitis)}</td>
+          <td style="text-align:center;">${dot(d.vesicant)}</td>
+          <td style="text-align:center;">${dot(d.thrombosis)}</td>
+          <td style="text-align:center;">${dot(d.pain)}</td>
+          <td style="text-align:center;">${dot(d.dedicated)}</td>
+          <td style="text-align:center;">${d.central ? '<span class="icc-central-yes">Central</span>' : dot(0)}</td>
+        </tr>`).join('');
+    }
+
+    // Family filter buttons
+    document.querySelectorAll('.icc-filter-btn[data-family]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.icc-filter-btn[data-family]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        iccActiveFamily = btn.dataset.family;
+        renderICC();
+      });
+    });
+
+    // Flag filter buttons (toggle)
+    document.querySelectorAll('.icc-filter-btn[data-flag]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const flag = btn.dataset.flag;
+        if (iccActiveFlag === flag) {
+          iccActiveFlag = null;
+          btn.classList.remove('active');
+        } else {
+          document.querySelectorAll('.icc-filter-btn[data-flag]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          iccActiveFlag = flag;
+        }
+        renderICC();
+      });
+    });
+
+    // Search
+    document.getElementById('iccSearch').addEventListener('input', function() {
+      iccSearchTerm = this.value.trim();
+      renderICC();
+    });
+
+    // pH + Osmolaridad calculator
+    const iccPhRange = document.getElementById('iccPhRange');
+    const iccOsmRange = document.getElementById('iccOsmRange');
+    function updateIccCalc() {
+      const ph = parseFloat(iccPhRange.value);
+      const osm = parseInt(iccOsmRange.value);
+      document.getElementById('iccPhVal').textContent = ph.toFixed(1);
+      document.getElementById('iccOsmVal').textContent = osm;
+      const phEl = document.getElementById('iccPhResult');
+      const osmEl = document.getElementById('iccOsmResult');
+      const advEl = document.getElementById('iccOverallAdvice');
+      phEl.className = 'risk-pill';
+      osmEl.className = 'risk-pill';
+      if (ph >= 5 && ph <= 9) {
+        phEl.classList.add('risk-low'); phEl.textContent = '🟢 pH ' + ph.toFixed(1) + ' — Compatible periférico';
+      } else if ((ph >= 4 && ph < 5) || (ph > 9 && ph <= 10)) {
+        phEl.classList.add('risk-mid'); phEl.textContent = '🟡 pH ' + ph.toFixed(1) + ' — Precaución; evaluar vía';
+      } else {
+        phEl.classList.add('risk-high'); phEl.textContent = '🔴 pH ' + ph.toFixed(1) + ' — Riesgo alto; central recomendada';
+      }
+      if (osm < 600) {
+        osmEl.classList.add('risk-low'); osmEl.textContent = '🟢 ' + osm + ' mOsm/L — Compatible periférico';
+      } else if (osm < 850) {
+        osmEl.classList.add('risk-mid'); osmEl.textContent = '🟡 ' + osm + ' mOsm/L — Precaución; evaluar vía';
+      } else {
+        osmEl.classList.add('risk-high'); osmEl.textContent = '🔴 ' + osm + ' mOsm/L — Hiperosmolar; central obligatoria';
+      }
+      const phOk = ph >= 5 && ph <= 9;
+      const osmOk = osm < 600;
+      if (phOk && osmOk) advEl.textContent = 'Infusato dentro de los límites de compatibilidad periférica. Verificar siempre otras propiedades irritantes o vesicantes del fármaco específico.';
+      else if (!phOk && !osmOk) advEl.textContent = 'Tanto el pH como la osmolaridad son incompatibles con la vía periférica. Se requiere acceso venoso central.';
+      else if (!phOk) advEl.textContent = 'pH fuera del rango seguro. Considerar acceso central, dilución adecuada, velocidad de infusión lenta o rotación frecuente de sitio.';
+      else advEl.textContent = 'Osmolaridad elevada. Evaluar acceso central. Infusión periférica prolongada puede causar daño endotelial y tromboflebitis.';
+    }
+    iccPhRange.addEventListener('input', updateIccCalc);
+    iccOsmRange.addEventListener('input', updateIccCalc);
+    updateIccCalc();
+    renderICC();
   </script>
 </body>
 </html>
